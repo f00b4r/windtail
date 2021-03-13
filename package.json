@@ -1,0 +1,26 @@
+{
+  "name": "windtail",
+  "version": "0.0.1",
+  "description": "Tailwind CSS bundled and prefixed for decorate existing websites.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/f00b4r/windtail.git"
+  },
+  "keywords": [
+    "tailwindcss",
+    "css",
+    "windtail"
+  ],
+  "author": "Felix",
+  "license": "MIT",
+  "dependencies": {
+    "@tailwindcss/aspect-ratio": "^0.2.0",
+    "tailwindcss": "^2.0.3"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "clean-css-cli": "^5.2.1",
+    "postcss": "^8.2.8",
+    "tailwindcss-cli": "^0.1.2"
+  }
+}
