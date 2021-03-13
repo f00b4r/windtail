@@ -30810,11 +30810,11 @@
           animation: tw-bounce 1s infinite;
 }
 
-.flex-important {
+.tw-flex-important {
   display: flex !important;
 }
 
-.block-important {
+.tw-block-important {
   display: block !important;
 }
 
@@ -61552,11 +61552,11 @@
             animation: tw-bounce 1s infinite;
   }
 
-  .sm\:flex-important {
+  .sm\:tw-flex-important {
     display: flex !important;
   }
 
-  .sm\:block-important {
+  .sm\:tw-block-important {
     display: block !important;
   }
 }
@@ -92295,11 +92295,11 @@
             animation: tw-bounce 1s infinite;
   }
 
-  .md\:flex-important {
+  .md\:tw-flex-important {
     display: flex !important;
   }
 
-  .md\:block-important {
+  .md\:tw-block-important {
     display: block !important;
   }
 }
@@ -123038,11 +123038,11 @@
             animation: tw-bounce 1s infinite;
   }
 
-  .lg\:flex-important {
+  .lg\:tw-flex-important {
     display: flex !important;
   }
 
-  .lg\:block-important {
+  .lg\:tw-block-important {
     display: block !important;
   }
 }
@@ -153781,11 +153781,11 @@
             animation: tw-bounce 1s infinite;
   }
 
-  .xl\:flex-important {
+  .xl\:tw-flex-important {
     display: flex !important;
   }
 
-  .xl\:block-important {
+  .xl\:tw-block-important {
     display: block !important;
   }
 }
@@ -184524,11 +184524,11 @@
             animation: tw-bounce 1s infinite;
   }
 
-  .\32xl\:flex-important {
+  .\32xl\:tw-flex-important {
     display: flex !important;
   }
 
-  .\32xl\:block-important {
+  .\32xl\:tw-block-important {
     display: block !important;
   }
 }

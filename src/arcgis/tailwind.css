@@ -3,10 +3,10 @@
 @tailwind screens;
 @layer utilities {
 	@variants responsive {
-		.flex-important {
+		.tw-flex-important {
 			display: flex !important;
 		}
-		.block-important {
+		.tw-block-important {
 			display: block !important;
 		}
 	}
