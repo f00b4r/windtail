@@ -1,2 +1,13 @@
 @tailwind components;
 @tailwind utilities;
+@tailwind screens;
+@layer utilities {
+	@variants responsive {
+		.flex-important {
+			display: flex !important;
+		}
+		.block-important {
+			display: block !important;
+		}
+	}
+}
