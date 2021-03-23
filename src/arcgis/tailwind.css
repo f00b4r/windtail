@@ -1,6 +1,7 @@
 @tailwind components;
 @tailwind utilities;
 @tailwind screens;
+
 @layer utilities {
 	@variants responsive {
 		.tw-flex-important {
@@ -9,5 +10,92 @@
 		.tw-block-important {
 			display: block !important;
 		}
+	}
+}
+
+@layer base {
+	.tw-button {
+		display: inline-flex;
+		position: relative;
+		overflow: hidden;
+		padding: 10px 15px;
+	}
+	.tw-button:hover {
+		text-decoration: none;
+	}
+	.tw-button::before, .tw-button::after {
+		width: 100%;
+		height: 5px;
+		left: 0;
+	}
+	.tw-button::before {
+		top: 0;
+	}
+	.tw-button::after {
+		bottom: 0;
+	}
+	.tw-button .tw-button-label {
+		color: #2c2b82;
+	}
+	.tw-button .tw-button-label::before, .tw-button .tw-button-label::after {
+		width: 5px;
+		height: 100%;
+		top: 0;
+	}
+	.tw-button .tw-button-label::before {
+		left: 0;
+	}
+	.tw-button .tw-button-label::after {
+		right: 0;
+	}
+	.tw-button::before, .tw-button::after, .tw-button .tw-button-label::before, .tw-button .tw-button-label::after {
+		content: "";
+		background-color: #000;
+		position: absolute;
+		opacity: 1;
+		will-change: transform, opacity;
+		transition-property: transform, opacity;
+		transition-duration: .2s;
+		transition-timing-function: ease-out;
+		transform: translate3d(0, 0, 0);
+	}
+	.tw-button:hover::before, .tw-button:hover::after, .tw-button:hover .tw-button-label::before, .tw-button:hover .tw-button-label::after {
+		opacity: 0;
+	}
+	.tw-button:hover::before, .tw-button:hover .tw-button-label::before {
+		transition-delay: 0s;
+	}
+	.tw-button::after, .tw-button:hover .tw-button-label::after {
+		transition-delay: .25s;
+	}
+	.tw-button .tw-button-label::after, .tw-button:hover::after {
+		transition-delay: .15s;
+	}
+	.tw-button .tw-button-label::before, .tw-button:hover::before {
+		transition-delay: .35s;
+	}
+	.tw-button:hover::before {
+		transform: translate3d(-105%, 0, 0);
+	}
+	.tw-button:hover::after {
+		transform: translate3d(105%, 0, 0);
+	}
+	.tw-button:hover .tw-button-label::before {
+		transform: translate3d(0, 105%, 0);
+	}
+	.tw-button:hover .tw-button-label::after {
+		transform: translate3d(0, -105%, 0);
+	}
+	.tw-button-red .tw-button-label {
+		color: #c4001f;
+	}
+	.tw-button-red::before, .tw-button-red::after, .tw-button-red .tw-button-label::before, .tw-button-red .tw-button-label::after {
+		background-color: #c4001f;
+	}
+	.tw-button-blue .tw-button-label {
+		color: #2c2b82;
+	}
+	.tw-button-blue::before, .tw-button-blue::after, .tw-button-blue .tw-button-label::before, .tw-button-blue .tw-button-label::after {
+		background-color: #2c2b82;
 	}
 }
