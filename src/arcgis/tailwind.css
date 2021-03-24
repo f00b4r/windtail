@@ -1,6 +1,7 @@
 @tailwind components;
 @tailwind utilities;
 @tailwind screens;
+/* CUSTOM */
 
 @layer utilities {
 	@variants responsive {
@@ -12,6 +13,43 @@
 		}
 	}
 }
+
+/* LINKS */
+
+@layer base {
+	.tw-cool-links a {
+		display: inline-block;
+		margin: auto;
+		text-decoration: none;
+		color: inherit;
+		position: relative;
+		transition: all .3s cubic-bezier(.2, 0, 0, 1);
+		z-index: 1;
+	}
+	.tw-cool-links a:after {
+		content: '';
+		display: block;
+		height: 1px;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		background-color: theme('colors.primary');
+		transition: all .3s cubic-bezier(.2, 0, 0, 1);
+		transform-origin: bottom center;
+		z-index: -1;
+	}
+	.tw-cool-links a:hover {
+		color: white;
+	}
+	.tw-cool-links a:hover:after {
+		right: 0;
+		left: 0;
+		height: 100%;
+	}
+}
+
+/* BUTTONS */
 
 @layer base {
 	.tw-button {
