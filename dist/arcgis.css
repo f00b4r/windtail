@@ -186659,6 +186659,8 @@
 
 .custom-header .dropdown-menu {
   background: inherit;
+  box-shadow: 2px 2px 8px rgb(0 0 0 / 20%);
+  font-size: inherit;
 }
 
 .custom-header .navbar {
