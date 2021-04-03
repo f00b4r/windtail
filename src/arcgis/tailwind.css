@@ -40,12 +40,18 @@
 		z-index: -1;
 	}
 	.tw-cool-links a:hover {
-		color: white;
+		color: theme('colors.white');;
 	}
 	.tw-cool-links a:hover:after {
 		right: 0;
 		left: 0;
 		height: 100%;
+	}
+	.tw-cool-links-red a:hover {
+		color: theme('colors.primary');
+	}
+	.tw-cool-links-red a:after {
+		background-color: theme('colors.white');
 	}
 }
 

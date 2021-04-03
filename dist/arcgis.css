@@ -186674,13 +186674,21 @@
 }
 
 .tw-cool-links a:hover {
-  color: white;
+  color: #fff;
 }
 
 .tw-cool-links a:hover:after {
   right: 0;
   left: 0;
   height: 100%;
+}
+
+.tw-cool-links-red a:hover {
+  color: #c4001e;
+}
+
+.tw-cool-links-red a:after {
+  background-color: #fff;
 }
 
 /* BUTTONS */
