@@ -186647,6 +186647,61 @@
 
 /* CUSTOM */
 
+/* ARCGIS */
+
+.custom-footer {
+  background-color: #f7f7f7;
+}
+
+.custom-header .dropdown:hover {
+  background: #c4001e;
+}
+
+.custom-header .dropdown-menu {
+  background: inherit;
+}
+
+.custom-header .navbar {
+  background-color: #2b2b82;
+}
+
+@media only screen and (min-width: 768px) {
+  .custom-header .dropdown-hover:hover .dropdown-menu {
+    display: block;
+  }
+}
+
+/* TABLES */
+
+.tw-table {
+  width: 100%;
+}
+
+.tw-table th {
+  --tw-border-opacity: 1;
+  border-color: rgba(243, 244, 246, var(--tw-border-opacity));
+  border-style: solid;
+  border-bottom-width: 1px;
+  font-weight: 700;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  text-align: left;
+  color: #c4001e;
+}
+
+.tw-table td {
+  --tw-border-opacity: 1;
+  border-color: rgba(243, 244, 246, var(--tw-border-opacity));
+  border-style: solid;
+  border-bottom-width: 1px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 /* LINKS */
 
 .tw-cool-links a {

@@ -14,6 +14,43 @@
 	}
 }
 
+/* ARCGIS */
+
+@layer base {
+	.custom-header .dropdown:hover {
+		background: theme("colors.primary");
+	}
+	.custom-header .dropdown-menu {
+		background: inherit;
+	}
+	.custom-header .navbar {
+		background-color: theme("colors.secondary");
+	}
+	@media only screen and (min-width: 768px) {
+		.custom-header .dropdown-hover:hover .dropdown-menu {
+			display: block;
+		}
+	}
+	.custom-footer {
+		background-color: #f7f7f7;
+	}
+}
+
+/* TABLES */
+
+@layer base {
+	.tw-table {
+		@apply tw-w-full;
+	}
+	.tw-table th {
+		@apply tw-px-6 tw-py-3 tw-border-b tw-border-gray-100 tw-border-solid tw-text-left tw-font-bold;
+		color: theme('colors.primary');
+	}
+	.tw-table td {
+		@apply tw-px-6 tw-py-2 tw-border-b tw-border-gray-100 tw-border-solid;
+	}
+}
+
 /* LINKS */
 
 @layer base {
@@ -40,7 +77,8 @@
 		z-index: -1;
 	}
 	.tw-cool-links a:hover {
-		color: theme('colors.white');;
+		color: theme('colors.white');
+		;
 	}
 	.tw-cool-links a:hover:after {
 		right: 0;
