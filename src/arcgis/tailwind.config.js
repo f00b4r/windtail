@@ -7,7 +7,7 @@ module.exports = resolve(base, {
     extend: {
       colors: {
         primary: '#c4001e',
-        secondary: '#2b2b82',
+        secondary: '#0c2f83',
       }
     }
   }
