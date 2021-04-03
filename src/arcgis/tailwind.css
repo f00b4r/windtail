@@ -17,6 +17,9 @@
 /* ARCGIS */
 
 @layer base {
+	.search-card {
+		padding-top: 0;
+	}
 	.custom-header .dropdown:hover {
 		background: theme("colors.primary");
 	}
@@ -30,9 +33,6 @@
 		.custom-header .dropdown-hover:hover .dropdown-menu {
 			display: block;
 		}
-	}
-	.custom-footer {
-		background-color: #f7f7f7;
 	}
 }
 

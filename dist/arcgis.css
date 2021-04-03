@@ -186649,8 +186649,8 @@
 
 /* ARCGIS */
 
-.custom-footer {
-  background-color: #f7f7f7;
+.search-card {
+  padding-top: 0;
 }
 
 .custom-header .dropdown:hover {
