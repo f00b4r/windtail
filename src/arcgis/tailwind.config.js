@@ -8,7 +8,15 @@ module.exports = resolve(base, {
       colors: {
         primary: '#c4001e',
         secondary: '#0c2f83',
+      },
+      animation: {
+        'spin-slow': 'spin 3s linear infinite',
       }
+    }
+  },
+  variants: {
+    extend: {
+      animation: ['hover', 'group-hover', 'focus'],
     }
   }
 });
