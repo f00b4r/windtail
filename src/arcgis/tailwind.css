@@ -109,8 +109,7 @@
 		text-decoration: none;
 	}
 	.tw-button:hover {
-		text-decoration: none;
-
+		text-decoration: none !important;
 	}
 	.tw-button::before, .tw-button::after {
 		width: 100%;
