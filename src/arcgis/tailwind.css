@@ -36,6 +36,9 @@
 			display: block;
 		}
 	}
+	a:hover {
+		outline: none !important;
+	}
 }
 
 /* TABLES */
@@ -103,9 +106,11 @@
 		position: relative;
 		overflow: hidden;
 		padding: 10px 15px;
+		text-decoration: none;
 	}
 	.tw-button:hover {
 		text-decoration: none;
+
 	}
 	.tw-button::before, .tw-button::after {
 		width: 100%;

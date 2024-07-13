@@ -187243,6 +187243,10 @@
   }
 }
 
+a:hover {
+  outline: none !important;
+}
+
 /* TABLES */
 
 .tw-table {
@@ -187325,6 +187329,7 @@
   position: relative;
   overflow: hidden;
   padding: 10px 15px;
+  text-decoration: none;
 }
 
 .tw-button:hover {
