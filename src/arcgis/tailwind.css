@@ -39,6 +39,9 @@
 	a:hover {
 		outline: none !important;
 	}
+	.markdown-card a {
+		text-decoration: none !important;
+	}
 }
 
 /* TABLES */
