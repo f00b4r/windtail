@@ -187282,6 +187282,30 @@ a:hover {
   padding-right: 1.5rem;
 }
 
+/* COLLAPSE */
+
+.collapse-arrow.collapsed:after {
+  background-image: url('https://iconist.vercel.app/hero/outline/arrow-down');
+  background-size: 20px 20px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  content:"";
+  position: absolute;
+  right: 20px;
+}
+
+.collapse-arrow:not(.collapsed):after {
+  background-image: url('https://iconist.vercel.app/hero/outline/arrow-up');
+  background-size: 20px 20px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  content:"";
+  position: absolute;
+  right: 20px;
+}
+
 /* LINKS */
 
 .tw-cool-links a {
