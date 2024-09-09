@@ -10,3 +10,6 @@ _build-%:
 
 production: export NODE_ENV=production
 production: build
+
+docker:
+	docker run -it --rm -v ${CURDIR}:/srv dockette/ci:node16 bash
